@@ -1,6 +1,6 @@
 {
   "name": "voronoi-sampler",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -17,5 +17,8 @@
     "ts-jest": "^29.2.5",
     "tsup": "^8.3.4",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "random": "^5.1.1"
   }
 }
