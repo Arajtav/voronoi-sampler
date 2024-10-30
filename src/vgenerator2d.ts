@@ -1,12 +1,20 @@
 import { intRange } from "./range";
 import { Random } from 'random';
 
+/**
+ * 2 dimensional voronoi generator.
+ */
 export class VoronoiGenerator2D {
     seed: number;
     constructor(seed: number) {
         this.seed = seed;
     }
 
+    /**
+     * Returns a point nearest to sampled location.
+     * @param x Sample's location's x.
+     * @param y Sample's location's y.
+     */
     sample(x: number, y: number): { x: number, y: number } {
         const px: number[] = intRange(x);
         const py: number[] = intRange(y);
