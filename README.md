@@ -16,3 +16,10 @@ Example 2:
     // works by getting point on all round coords near sampled location, offseting each one by a random value, based on that's point position and voronoi seed, and returns nearest one
     console.log(`x: ${point.x}, y: ${point.y}`);
 ```
+
+Example 3:
+```
+    cosnt vgNd = new VoronoiGeneratorND(3, Math.random()); // 3 dimensional voronoi generator
+    let point = vgNd.sample([0, 0, 0]);
+    console.log(`x: ${point[0]}, y: ${point[1]}, z: ${point[2]}`);
+```
