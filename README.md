@@ -1,7 +1,8 @@
 Hi, this is a simple package creating voronoi samplers.
 The idea is that it you just give it points and values, and then when you use `sample` function, which gives you value of nearest point.
+Currently code is pretty bad but it works, I will try to make it better later.
 
-Example:
+Example - 2d sampler:
 ```
     const vs2d = new VoronoiSampler2D<string>();
     vs2d.addPoint(-1, -1, "-");
@@ -9,7 +10,7 @@ Example:
     console.log(vs2d.sample(-0.5, -0.4)); // will be "-", because point closest to sampled one is (-1, -1), which has the value "-"
 ```
 
-Example 2:
+Example - 2d generator:
 ```
     const vg2d = new VoronoiGenerator2D(Math.random());
     let point = vg2d.sample(0.0, 0.0); // returns a point.
@@ -17,7 +18,7 @@ Example 2:
     console.log(`x: ${point.x}, y: ${point.y}`);
 ```
 
-Example 3:
+Example - N dimensional generator (warning: it gets slower with each added dimension, for 2d and 3d use already existing 2d and 3d generators as these will be much faster):
 ```
     cosnt vgNd = new VoronoiGeneratorND(3, Math.random()); // 3 dimensional voronoi generator
     let point = vgNd.sample([0, 0, 0]);

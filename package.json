@@ -1,6 +1,6 @@
 {
-  "name": "voronoi-sampler",
-  "version": "0.4.1",
+  "name": "@arajtav/voronoi",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
